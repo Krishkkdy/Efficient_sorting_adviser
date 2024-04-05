@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sorting</title>
+    <link rel="stylesheet" href="/Css/style.css ">
+    <style>
+
+
+.bar {
+position: relative;
+width: 40px; /* Increased width */
+margin: 0 2px;
+background-color: blue;
+border-radius: 3px;
+border: 0.1px solid white ;
+transition: transform 0.5s ease;
+}
+.value {
+position: absolute;
+bottom: -20px;
+left: 50%;
+transform: translateX(-50%);
+color: white;
+}
+
+.block {
+width: 50px;
+height: 50px;
+border-radius: 10%;
+background-color: #ffffff;
+margin: 0 5px;
+border: solid white 0.1px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: transform 0.5s ease;
+margin-top: 20px;
+color: #010101;
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="project1.html">Home</a></li>
+        <li><a href="information.html">Info</a></li>
+        <li><a href="bubble.html">Bubble Sort</a></li>
+        <li><a href="insertion main.html">Insertion Sort</a></li>
+        <li><a href="selection.html">Selection Sort</a></li>
+        <li><a href="merge.html">Merge Sort</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul><br><br>
+<p class="header">Selection Sort</p>
+<div class="search">
+    <input type="text" id="inputArray" placeholder="e.g., 5,3,8,4,2">
+    <button class="visualizeBtn" onclick="startSorting()">Array</button>
+    <button class="visualizeBtn" onclick="start()">Bar</button>
+</div>
+<div id="array"></div>
+
+<div class="container" id="container"></div>
+<div class="counter-container">
+    <span class="counter-label">Array Comparisons:</span>
+    <span id="comparisonCounter">0</span>
+    <span class="counter-label">Swaps:</span>
+    <span id="swapCounter">0</span>
+</div>
+<div class="counter-container">
+    <span class="counter-label">Bar Comparisons:</span>
+    <span id="barcom">0</span>
+    <span class="counter-label">Swaps:</span>
+    <span id="barswap">0</span>
+</div>
+
+<div class="codeh">
+    <p>Codes:</p>
+</div>
+
+<div class="info">
+    
+    <div class="time">
+        <label style="color: cyan;">Time Complexity:</label><br>
+        <label>Worst: O(N^2)</label><br>
+        <label>Average: O(N^2)</label><br>
+        <label>Best: O(N^2)</label><br><br><br>
+        <label style="color: cyan;">Space Complexity:</label><br>
+        <label>O(1)</label>
+    </div>
+
+    <div class="code">
+        <select class="visualizeBtn" id="languageSelect">
+            <option value="c-selection" selected>C</option>
+            <option value="cpp-selection" >C++</option>
+            <option value="java-selection">Java</option>
+            <option value="javascript-selection">JavaScript</option>
+        </select>
+        <button class="visualizeBtn" onclick="displayCode()">Display Code</button><br><br>
+        <textarea id="codeDisplay" rows="40" cols="70" readonly></textarea>
+    </div>
+
+</div>
+<script src="/js_file/selection.js"></script>
+</body>
+</html>

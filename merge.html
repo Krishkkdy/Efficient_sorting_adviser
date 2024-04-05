@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/Css/style.css">
+<title>Merge Sort</title>
+<style>
+    .counters{
+        text-align: center;
+        font-size: 20px;
+    }
+    /* CSS for bars representing numbers */
+    .bar {
+        position: relative;
+        width: 40px; /* Increased width */
+        margin: 0 2px;
+        background-color: blue;
+        border-radius: 3px;
+        border: 0.1px solid white ;
+        display: inline-block;
+        margin-bottom: 20px;
+        color: white;
+    }
+    /* CSS for sorted bars */
+    .sorted {
+        background-color: rgb(115, 255, 115);
+    }
+
+    /* CSS for pivot bar */
+    .pivot {
+        background-color: red;
+    }
+
+    /* CSS for container */
+    .container {
+        margin-top: 30px;
+        width: 100%;
+        overflow-x: auto;
+        padding: 10px;
+    }
+
+    /* CSS for value text inside bars */
+    .value {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    /* CSS for sorted array display */
+    .sorted-array {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .array-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        
+    }
+
+    .array-cell {
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+        background-color: #ffffff;
+        border: solid #8BE3F3 0.1px;
+        color: #000000;
+        margin-top: 14px;
+        text-align: center;
+        padding-top: 14px;
+    }
+
+    .highlight {
+        background-color: yellow;
+    }
+
+    .sorted {
+            background-color: rgb(48, 240, 0); /* Green color for sorted cells */
+    }
+
+    #divider, #combiner, #divideCounter, #combineCounter{
+    font-size: 18px;
+    color: rgb(3, 227, 3);
+}
+</style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="project1.html">Home</a></li>
+        <li><a href="information.html">Info</a></li>
+        <li><a href="bubble.html">Bubble Sort</a></li>
+        <li><a href="insertion main.html">Insertion Sort</a></li>
+        <li><a href="selection.html">Selection Sort</a></li>
+        <li><a href="merge.html">Merge Sort</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul><br><br>
+
+    <p class="header">Merge Sort</p>
+    
+    <div class="search">
+        <input type="text" id="inputArray" placeholder="Enter numbers">
+        <button class="visualizeBtn" onclick="startSort()">Array</button>
+        <button class="visualizeBtn" onclick="startMergeSort()">Bar</button>
+    </div>
+    <div id="arrayContainer" class="array-container"></div>
+    <div class="container" id="barsContainer"></div>
+
+    <div class="sorted-array" id="sortedArray"></div>
+
+    <div class="counters">
+        <label>Array Divide : <span id="divider">0</span></label>
+        <label>Combine: <span id="combiner">0</span></label>
+    </div>
+
+    <div class="counters">
+        <label>Divide: <span id="divideCounter">0</span></label>
+        <label>Combine: <span id="combineCounter">0</span></label>
+    </div>
+
+
+    <div class="codeh">
+        <p>Codes:</p>
+    </div>
+
+    <div class="info">
+    
+        <div class="time">
+            <label style="color: cyan;">Time Complexity:</label><br>
+            <label>Worst: O(N log N)</label><br>
+            <label>Average: O(N log N)</label><br>
+            <label>Best: O(N log N)</label><br><br><br>
+            <label style="color: cyan;">Space Complexity:</label><br>
+            <label>O(N)</label>
+        </div>
+    
+        <div class="code">
+            <select class="visualizeBtn" id="languageSelect">
+                <option value="c-merge" selected>C</option>
+                <option value="cpp-merge" >C++</option>
+                <option value="java-merge">Java</option>
+                <option value="javascript-merge">JavaScript</option>
+            </select>
+            <button class="visualizeBtn" onclick="displayCode()">Display Code</button><br><br>
+            <textarea id="codeDisplay" rows="40" cols="70"readonly></textarea>
+        </div>
+    
+    </div>
+
+    <script src="/js_file/merge.js"></script>
+</body>
+</html>

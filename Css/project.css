@@ -1,0 +1,62 @@
+.algorithm {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .Efficient{
+      border: 1px solid cyan;
+      padding: 10px;
+      border-radius: 10px;
+      margin-left: 40px;
+      margin-bottom: 40px;
+      display: inline-block; /* Set display to inline-block */
+      width: 300px; /* Adjust width to fit 5 divs side by side */
+      vertical-align: top;
+      height: 160px;
+      background-color: rgba(0, 255, 255, 0.081);
+      
+  }
+
+  .Efficient h2{
+      color: white;
+      text-align: center;
+  }
+
+  .Better{
+      border: 1px solid cyan;
+      padding: 10px;
+      border-radius: 10px;
+      margin-left: 565px;
+      margin-bottom: 30px;
+      display: inline-block; /* Set display to inline-block */
+      width: 350px; /* Adjust width to fit 5 divs side by side */
+      vertical-align: top;
+      height: 150px;
+      background-color: rgba(0, 255, 255, 0.081);
+  }
+
+  .Better h2{
+      color: cyan;
+      text-align: center;
+      
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .info{
+      justify-content: center;
+      text-align: center;
+  }
+
+  .info input{
+    width: 40%;
+  }
+
+  h1{
+      text-align: center;
+      color: white;
+      font-size: 45px;
+  }

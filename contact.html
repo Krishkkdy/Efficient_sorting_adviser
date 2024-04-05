@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    <style>
+
+        .page{
+            margin: 50px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 20px;
+        }
+
+        .page h1{
+            color: cyan;
+        }
+
+        .info{
+            margin-top: 100px;
+            display: block;
+            text-align: left;
+            border: 2px solid cyan;
+            background-color: rgba(0, 255, 255, 0.064);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .welcome{
+            margin-left: 200px;
+        }
+        .welcome h1{
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            width: 30%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 255, 255, 0.064);
+            border-radius: 10px;
+            box-shadow: 3px 3px 20px cyan;
+            border: 2px solid rgba(0, 255, 255, 0.585);
+        
+        }
+
+        
+
+        .page form {
+            margin-top: 20px;
+        }
+        .page label, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+            background-color: rgba(0, 255, 255, 0);
+            color: #fff;
+            
+        }
+        .page input, textarea {
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid cyan;
+        }
+        .page button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+        .page button:hover {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="project1.html">Home</a></li>
+        <li><a href="information.html">Info</a></li>
+        <li><a href="bubble.html">Bubble Sort</a></li>
+        <li><a href="insertion main.html">Insertion Sort</a></li>
+        <li><a href="selection.html">Selection Sort</a></li>
+        <li><a href="merge.html">Merge Sort</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul><br><br>
+    <div class="page">
+        <div class="welcome">
+            <div class="con">
+            <h1>Contact Us</h1>
+            <p>We're excited to hear from you! Please fill out the form given to get in touch with us.</p> 
+            </div>
+            <div class="info">
+                <p style="color: cyan;">Email: </p>
+                <p>22it048@charusat.edu.in (Krish Kakadiya)</p>
+                <p>22it043@charusat.edu.in (Mohit Jadav)</p><br>
+                <p style="color: cyan;">Phone/Whatsapp: </p>
+                <p>+91 9327518184</p>
+                <p>+91 8200340283</p><br>
+            </div>  
+        </div>
+        <div class="contact">
+            <form action="http://localhost:3000/submit-form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Drop Your message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+    
+
+    
+    
+        
+        
+    
+</body>
+</html>
