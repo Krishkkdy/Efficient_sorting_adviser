@@ -1,9 +1,9 @@
-# Efficient_sorting_adviser
-A Project, that is useful for the sorting visualization and Efficient sorting adviser.
 
 <h1>Efficient Sorting Adviser</h1>
 
 <p><strong>A project that is useful for sorting visualization and efficient sorting advising.</strong></p>
+
+<p><strong>📑I have some limited Sorting Techniques available. So apologies for that.📑</strong></p>
 
 <h2><strong>Introduction</strong></h2>
 <p><em>Efficient Sorting Adviser</em> is designed to assist users in understanding and visualizing sorting algorithms. It provides clear demonstrations of algorithms like Bubble Sort, Insertion Sort, Merge Sort, and Selection Sort, enabling better insights into their functionality and efficiency.</p>
